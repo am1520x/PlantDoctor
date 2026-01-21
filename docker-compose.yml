@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_NAME=efficientnet_b0
+      - MODEL_PATH=experiments/efficientnet_b0/best_model.pth
+      - DATA_DIR=datasets/processed
+      - MAX_FILE_SIZE_MB=10
+      - ALLOWED_EXTENSIONS=jpg,jpeg,png
+    volumes:
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s

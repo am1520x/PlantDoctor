@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Data (exclude raw/training data, keep only processed)
+datasets/raw/
+datasets/train/
+datasets/val/
+datasets/test/
+
+# Experiments (keep only best models)
+experiments/*/checkpoints/
+experiments/*/logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+*.md
+docs/
+
+# Tests
+tests/
+*.pytest_cache/
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
