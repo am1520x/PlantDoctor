@@ -22,6 +22,7 @@ build/
 .gitignore
 
 # Data (exclude raw/training data, keep only processed)
+datasets/
 datasets/raw/
 datasets/train/
 datasets/val/
@@ -47,3 +48,5 @@ tests/
 Dockerfile
 .dockerignore
 docker-compose.yml
+
+cache/

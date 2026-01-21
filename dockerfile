@@ -18,7 +18,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY Models/ ./Models/
 COPY API/ ./API/
-COPY datasets/processed/ ./datasets/processed/
 COPY experiments/ ./experiments/
 
 # Create necessary directories
