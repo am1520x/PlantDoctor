@@ -11,3 +11,12 @@ datasets/
 .jpeg
 .png
 .jpg
+.tar
+.zip
+*.h5
+*.ckpt
+.gz
+cache/
+.tar
+house_plant_species.tar
+
