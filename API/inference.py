@@ -90,6 +90,11 @@ def predict_image_bytes(
     conf = float(confidence.item())
     return class_name, conf
 
+def load_class_list(class_file='plant_classes.txt'):
+    """Load plant classes from text file."""
+    with open(class_file, 'r') as f:
+        classes = [line.strip() for line in f.readlines()]
+    return classes
 
 def load_artifacts(
     *,
@@ -98,6 +103,6 @@ def load_artifacts(
     model_name: str,
     device: str,
 ) -> InferenceArtifacts:
-    class_names = get_class_names(data_dir)
+    class_names = load_class_list("API/plant_classes.txt")
     model = load_inference_model(model_name, len(class_names), model_file, device=device)
     return InferenceArtifacts(model=model, class_names=class_names, device=device)

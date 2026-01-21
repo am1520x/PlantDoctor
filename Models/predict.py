@@ -54,13 +54,19 @@ def predict_image(model, image_path, class_names, device='cpu'):
         "confidence" : confidence.item()
     }
 
+def load_class_list(class_file='plant_classes.txt'):
+    """Load plant classes from text file."""
+    with open(class_file, 'r') as f:
+        classes = [line.strip() for line in f.readlines()]
+    return classes
+
 if __name__ == "__main__":
     DATA_DIR = "./datasets/processed"
     MODEL_FILE = "experiments/efficientnet_b0/best_model.pth"
     MODEL_NAME = "efficientnet_b0" # Example - must match training choice [cite: 32]
     
     # Get class names from your existing data_loader utility 
-    classes = get_class_names(DATA_DIR)
+    classes = load_class_list("./API/plant_classes.txt")
     
     # Load model
     device = 'cuda' if torch.cuda.is_available() else 'cpu'
