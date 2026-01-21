@@ -67,5 +67,5 @@ if __name__ == "__main__":
     model = load_inference_model(MODEL_NAME, len(classes), MODEL_FILE, device)
     
     # Run prediction
-    result = predict_image(model, "datasets/test_image.jpg", classes, device)
+    result = predict_image(model, "datasets/test_plant_2.jpg", classes, device)
     print(f"Prediction: {result['class']} ({result['confidence']:.2%})")
