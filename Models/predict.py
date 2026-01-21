@@ -7,6 +7,7 @@ from pathlib import Path
 from Models.models import ModelFactory
 from Models.data_loader import get_class_names
 
+
 def load_inference_model(model_name, num_classes, model_path, device='cpu'):
     """
     Instantiate architecture and load trained weights.
@@ -17,12 +18,18 @@ def load_inference_model(model_name, num_classes, model_path, device='cpu'):
         pretrained=False
     )
 
-    state_dict = torch.load(model_path, map_location=device)
+    checkpoint = torch.load(model_path, map_location=device)
+    
+    # Check if checkpoint is a dict with 'model_state_dict' key
+    if isinstance(checkpoint, dict) and 'model_state_dict' in checkpoint:
+        state_dict = checkpoint['model_state_dict']
+    else:
+        state_dict = checkpoint
+    
     model.load_state_dict(state_dict)
     model.to(device)
     model.eval()  # Set to evaluation mode (important for BatchNorm/Dropout)
     return model
-
 
 def predict_image(model, image_path, class_names, device='cpu'):
     """
@@ -49,8 +56,8 @@ def predict_image(model, image_path, class_names, device='cpu'):
 
 if __name__ == "__main__":
     DATA_DIR = "./datasets/processed"
-    MODEL_FILE = "best_model.pth"
-    MODEL_NAME = "mobilenet_v3_small" # Example - must match training choice [cite: 32]
+    MODEL_FILE = "experiments/efficientnet_b0/best_model.pth"
+    MODEL_NAME = "efficientnet_b0" # Example - must match training choice [cite: 32]
     
     # Get class names from your existing data_loader utility 
     classes = get_class_names(DATA_DIR)
@@ -60,5 +67,5 @@ if __name__ == "__main__":
     model = load_inference_model(MODEL_NAME, len(classes), MODEL_FILE, device)
     
     # Run prediction
-    result = predict_image(model, "test_plant.jpg", classes, device)
+    result = predict_image(model, "datasets/test_image.jpg", classes, device)
     print(f"Prediction: {result['class']} ({result['confidence']:.2%})")
