@@ -1,52 +1,40 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-venv/
-env/
-ENV/
-*.egg-info/
-dist/
-build/
+# --- Python & OS Bloat ---
+__pycache__/ 
+*.py[cod] 
+*$py.class 
+*.so 
+.Python 
+venv/ 
+env/ 
+.DS_Store 
+Thumbs.db 
 
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
+# --- The 5GB Culprits (Data & Uploads) ---
+# This ignores the folders and EVERYTHING inside them recursively
+datasets/**
+uploads/**
+cache/** 
 
-# Git
-.git/
-.gitignore
+# --- Experiments & Models ---
+# 1. First, ignore everything in experiments
+# experiments/**
 
-# Data (exclude raw/training data, keep only processed)
-datasets/
-datasets/raw/
-datasets/train/
-datasets/val/
-datasets/test/
+# 2. Then, "un-ignore" only the specific model your Dockerfile needs
+# This allows the context to stay small while keeping the required file
+# !experiments/efficientnet_b0/best_model.pth
 
-# Experiments (keep only best models)
-experiments/*/checkpoints/
-experiments/*/logs/
+# --- Git & IDEs ---
+.git/ 
+.gitignore 
+.vscode/ 
+.idea/ 
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Documentation
-*.md
-docs/
-
-# Tests
-tests/
-*.pytest_cache/
-
-# Docker
-Dockerfile
+# --- Build Artifacts ---
+dist/ 
+build/ 
+*.egg-info/ 
+Dockerfile 
+docker-compose.yml 
 .dockerignore
-docker-compose.yml
 
-cache/
+tests/
