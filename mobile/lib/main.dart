@@ -5,6 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:image_picker/image_picker.dart';
 
+import 'package:mime/mime.dart';
+import 'package:http_parser/http_parser.dart';
+import 'package:path/path.dart' as p;
+
+
 void main() => runApp(const PlantDoctorApp());
 
 class PlantDoctorApp extends StatelessWidget {
@@ -88,6 +93,19 @@ class Prediction {
   }
 }
 
+Future<http.MultipartFile> buildImagePart(File imageFile) async {
+  final mimeType = lookupMimeType(imageFile.path) ?? 'image/jpeg';
+  final mediaType = MediaType.parse(mimeType);
+
+  return http.MultipartFile.fromPath(
+    ApiConfig.fileFieldName,   // "file"
+    imageFile.path,
+    contentType: mediaType,    // <-- fixes the 415
+    filename: p.basename(imageFile.path),
+  );
+}
+
+
 class PlantApiClient {
   Future<Prediction> predict(File imageFile) async {
     final uri = Uri.parse('${ApiConfig.baseUrl}${ApiConfig.predictPath}');
@@ -95,12 +113,7 @@ class PlantApiClient {
 
     request.headers.addAll(ApiConfig.extraHeaders);
 
-    request.files.add(
-      await http.MultipartFile.fromPath(
-        ApiConfig.fileFieldName,
-        imageFile.path,
-      ),
-    );
+    request.files.add(await buildImagePart(imageFile));
 
     final streamed = await request.send();
     final body = await streamed.stream.bytesToString();
