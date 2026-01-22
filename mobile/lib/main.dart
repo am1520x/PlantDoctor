@@ -63,10 +63,7 @@ class Prediction {
   const Prediction({required this.label, required this.confidence});
 
   factory Prediction.fromJson(Map<String, dynamic> json) {
-    // Supports a few common response shapes:
-    // { "class": "...", "confidence": 0.93 }
-    // { "label": "...", "score": 0.93 }
-    // { "prediction": "...", "probability": 0.93 }
+    
     final label = json['class_name'] as String?;
     final conf = json['confidence'];
 
@@ -79,6 +76,7 @@ class Prediction {
       confidence: (conf as num).toDouble(),
     );
   }
+}
 
 Future<http.MultipartFile> buildImagePart(File imageFile) async {
   final mimeType = lookupMimeType(imageFile.path) ?? 'image/jpeg';
