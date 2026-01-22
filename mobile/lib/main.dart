@@ -67,31 +67,18 @@ class Prediction {
     // { "class": "...", "confidence": 0.93 }
     // { "label": "...", "score": 0.93 }
     // { "prediction": "...", "probability": 0.93 }
-    final labelAny = json['class'] ?? json['label'] ?? json['prediction'] ?? json['plant_class'];
-    if (labelAny == null) {
-      throw const FormatException('Response JSON missing label field (class/label/prediction).');
+    final label = json['class_name'] as String?;
+    final conf = json['confidence'];
+
+    if (label == null || conf == null) {
+      throw const FormatException('Invalid response JSON.');
     }
 
-    final confAny = json['confidence'] ??
-        json['score'] ??
-        json['probability'] ??
-        json['confidence_score'];
-
-    if (confAny == null) {
-      throw const FormatException('Response JSON missing confidence field (confidence/score/etc).');
-    }
-
-    final conf = (confAny is num)
-        ? confAny.toDouble()
-        : double.tryParse(confAny.toString());
-
-    if (conf == null) {
-      throw const FormatException('Could not parse confidence as a number.');
-    }
-
-    return Prediction(label: labelAny.toString(), confidence: conf);
+    return Prediction(
+      label: label,
+      confidence: (conf as num).toDouble(),
+    );
   }
-}
 
 Future<http.MultipartFile> buildImagePart(File imageFile) async {
   final mimeType = lookupMimeType(imageFile.path) ?? 'image/jpeg';
