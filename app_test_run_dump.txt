@@ -1,0 +1,360 @@
+(venv) PS D:\OneDrive\PlantDoctor\mobile> flutter run -d R58N734LRZJ
+Launching lib\main.dart on SM A415F in debug mode...
+Running Gradle task 'assembleDebug'...                            981.3s
+√ Built build\app\outputs\flutter-apk\app-debug.apk
+Installing build\app\outputs\flutter-apk\app-debug.apk...           9.8s
+D/FlutterJNI( 6770): Beginning load of flutter...
+D/FlutterJNI( 6770): flutter (null) was loaded normally!
+I/flutter ( 6770): [IMPORTANT:flutter/shell/platform/android/android_context_vk_impeller.cc(62)] Using the Impeller rendering backend (Vulkan).
+I/Choreographer( 6770): Skipped 151 frames!  The application may be doing too much work on its main thread.       
+I/SurfaceView@ac5133c( 6770): onWindowVisibilityChanged(0) true io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......I. 0,0-0,0} of ViewRootImpl@bce1ec3[MainActivity]
+I/BufferQueueConsumer( 6770): [](id:1a7200000000,api:0,p:-1,c:6770) connect: controlledByApp=false
+I/BLASTBufferQueue( 6770): [ViewRootImpl@bce1ec3[MainActivity]#0] constructor()
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=49 res=0x7 s={true -5476376623544836096} ch=true fn=-1
+I/BufferQueueProducer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#0(BLAST Consumer)0](id:1a7200000000,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+D/OpenGLRenderer( 6770): eglCreateWindowSurface
+I/SurfaceView@ac5133c( 6770): windowStopped(false) true io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] dp(1) 1 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919
+I/BufferQueueConsumer( 6770): [](id:1a7200000001,api:0,p:-1,c:6770) connect: controlledByApp=false
+I/BLASTBufferQueue( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0#1] constructor()
+I/SurfaceView@ac5133c( 6770): pST: sr = Rect(0, 0 - 1080, 2274) sw = 1080 sh = 2274
+I/SurfaceView@ac5133c( 6770): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+I/SurfaceView@ac5133c( 6770): pST: mTmpTransaction.apply, mTmpTransaction = android.view.SurfaceControl$Transaction@b475507
+I/SurfaceView@ac5133c( 6770): updateSurface: mVisible = true mSurface.isValid() = true
+I/SurfaceView@ac5133c( 6770): updateSurface: mSurfaceCreated = false surfaceChanged = true visibleChanged = true  
+I/SurfaceView@ac5133c( 6770): surfaceCreated 1 #8 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274}
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0#1(BLAST Consumer)1](id:1a7200000001,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0#1(BLAST Consumer)1](id:1a7200000001,api:1,p:6770,c:6770) disconnect: api 1
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0#1(BLAST Consumer)1](id:1a7200000001,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+E/ion     ( 6770): ioctl c0044901 failed with code -1: Invalid argument
+D/hw-ProcessState( 6770): Binder ioctl to enable oneway spam detection failed: Invalid argument
+I/SurfaceView@ac5133c( 6770): surfaceChanged (1080,2274) 1 #8 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274}
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] dp(2) 1 android.view.SurfaceView.updateSurface:1375 android.view.SurfaceView.lambda$new$1$SurfaceView:254 android.view.SurfaceView$$ExternalSyntheticLambda2.onPreDraw:2
+I/Choreographer( 6770): Skipped 44 frames!  The application may be doing too much work on its main thread.        
+I/DecorView( 6770): notifyKeepScreenOnChanged: keepScreenOn=false
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.example.mobile/com.example.mobile.MainActivity
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_STATUS_BAR on com.example.mobile/com.example.mobile.MainActivity
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=10 res=0x3 s={true -5476376623544836096} ch=false fn=1
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): updateBoundsLayer: t = android.view.SurfaceControl$Transaction@3b18634 sc = Surface(name=Bounds for - com.example.mobile/com.example.mobile.MainActivity@0)/@0x9b22c5d frame = 1       
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@3b18634 fN = 1 android.view.ViewRootImpl.prepareSurfaces:2778 android.view.ViewRootImpl.performTraversals:4024 android.view.ViewRootImpl.doTraversal:2919
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] pdf(1) 1 android.view.SurfaceView.notifyDrawFinished:599 android.view.SurfaceView.performDrawFinished:586 android.view.SurfaceView.$r8$lambda$st27mCkd9jfJkTrN_P3qIGKX6NY:0       
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): pendingDrawFinished. Waiting on draw reported mDrawsNeededToReport=1 
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Creating frameCompleteCallback
+I/SurfaceView@ac5133c( 6770): uSP: rtp = Rect(0, 0 - 1080, 2274) rtsw = 1080 rtsh = 2274
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+I/SurfaceView@ac5133c( 6770): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+I/SurfaceView@ac5133c( 6770): aOrMT: uB = true t = android.view.SurfaceControl$Transaction@74f69d2 fN = 1 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1728 android.graphics.RenderNode$CompositePositionUpdateListener.positionChanged:319
+I/SurfaceView@ac5133c( 6770): aOrMT: vR.mWNT, vR = ViewRootImpl@bce1ec3[MainActivity]
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@74f69d2 fN = 1 android.view.SurfaceView.applyOrMergeTransaction:1628 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1728
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/OpenGLRenderer( 6770): GPIS:: SetUp Pid : 6770    Tid : 6856
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] pdf(0) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] rdf()
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): reportDrawFinished (fn: 1)
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager( 6770): startInputInner - Id : 0
+I/InputMethodManager( 6770): startInputInner - mService.startInputOrWindowGainedFocus
+D/InputMethodManager( 6770): startInputInner - Id : 0
+Syncing files to device SM A415F...                                 3.8s
+
+Flutter run key commands.
+r Hot reload.
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on SM A415F is available at: http://127.0.0.1:61397/eoo1pvImnk8=/
+The Flutter DevTools debugger and profiler on SM A415F is available at:
+http://127.0.0.1:61397/eoo1pvImnk8=/devtools/?uri=ws://127.0.0.1:61397/eoo1pvImnk8=/ws
+D/ProfileInstaller( 6770): Installing profile for com.example.mobile
+I/.example.mobil( 6770): Thread[6,tid=6806,WaitingInMainSignalCatcherLoop,Thread*=0xb400007a70c62000,peer=0x13580228,"Signal Catcher"]: reacting to signal 10
+I/.example.mobil( 6770):
+I/.example.mobil( 6770): SIGUSR1 forcing GC (no HPROF) and profile save
+I/.example.mobil( 6770): Explicit concurrent copying GC freed 10453(1476KB) AllocSpace objects, 0(0B) LOS objects, 70% free, 2562KB/8706KB, paused 58us,26us total 12.830ms
+D/[secipm]( 6770): mSecIpmManager setProfileLength com.example.mobile profile:3122
+D/InputMethodManager( 6770): startInputInner - Id : 0
+I/InputMethodManager( 6770): startInputInner - mService.startInputOrWindowGainedFocus
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): handleAppVisibility mAppVisible=true visible=false
+I/SurfaceView@ac5133c( 6770): onWindowVisibilityChanged(8) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+I/SurfaceView@ac5133c( 6770): pST: mTmpTransaction.apply, mTmpTransaction = android.view.SurfaceControl$Transaction@b475507
+I/SurfaceView@ac5133c( 6770): surfaceDestroyed callback.size 1 #2 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274}
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0#1(BLAST Consumer)1](id:1a7200000001,api:1,p:6770,c:6770) disconnect: api 1
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0#1(BLAST Consumer)1](id:1a7200000001,api:0,p:-1,c:6770) disconnect: api -1
+I/SurfaceView@ac5133c( 6770): updateSurface: mVisible = false mSurface.isValid() = true
+I/SurfaceView@ac5133c( 6770): tryReleaseSurfaces: set mRtReleaseSurfaces = true
+I/SurfaceView@ac5133c( 6770): 195015313 wPL, frameNr = 0
+I/SurfaceView@ac5133c( 6770): remove() from RT android.view.SurfaceView$SurfaceViewPositionUpdateListener@b9fb291 Surface(name=SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0)/@0x88d65f6
+I/SurfaceView@ac5133c( 6770): remove() io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} Surface(name=SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0)/@0x88d65f6
+I/SurfaceView@ac5133c( 6770): aOrMT: uB = true t = android.view.SurfaceControl$Transaction@2fbe6cd fN = 0 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionLost:1785 android.graphics.RenderNode$CompositePositionUpdateListener.positionLost:326
+I/SurfaceView@ac5133c( 6770): aOrMT: vR.mWNT, vR = ViewRootImpl@bce1ec3[MainActivity]
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@2fbe6cd fN = 0 android.view.SurfaceView.applyOrMergeTransaction:1628 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionLost:1785
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/OpenGLRenderer( 6770): setSurface called with nullptr
+D/OpenGLRenderer( 6770): setSurface() destroyed EGLSurface
+D/OpenGLRenderer( 6770): destroyEglSurface
+I/BufferQueueProducer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#0(BLAST Consumer)0](id:1a7200000000,api:1,p:6770,c:6770) disconnect: api 1
+I/BLASTBufferQueue( 6770): [ViewRootImpl@bce1ec3[MainActivity]#0] destructor()
+I/BufferQueueConsumer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#0(BLAST Consumer)0](id:1a7200000000,api:0,p:-1,c:6770) disconnect
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=10 res=0x5 s={false 0} ch=true fn=2
+I/SurfaceView@ac5133c( 6770): windowStopped(true) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): stopped(true) old=false
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 0 1
+I/.example.mobil( 6770): Compiler allocated 4564KB to compile void android.view.ViewRootImpl.performTraversals()
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): handleAppVisibility mAppVisible=false visible=true
+I/SurfaceView@ac5133c( 6770): onWindowVisibilityChanged(4) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c G.E...... ......I. 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/OpenGLRenderer( 6770): setSurface called with nullptr
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)4 dur=28 res=0x1 s={false 0} ch=false fn=-1
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): stopped(false) old=true
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): stopped(false) old=false
+I/DecorView( 6770): notifyKeepScreenOnChanged: keepScreenOn=false
+I/SurfaceView@ac5133c( 6770): onWindowVisibilityChanged(0) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/OpenGLRenderer( 6770): setSurface called with nullptr
+I/BufferQueueConsumer( 6770): [](id:1a7200000002,api:0,p:-1,c:6770) connect: controlledByApp=false
+I/BLASTBufferQueue( 6770): [ViewRootImpl@bce1ec3[MainActivity]#2] constructor()
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=10 res=0x7 s={true -5476376623544836096} ch=true fn=-1
+I/BufferQueueProducer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#2(BLAST Consumer)2](id:1a7200000002,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+D/OpenGLRenderer( 6770): eglCreateWindowSurface
+I/SurfaceView@ac5133c( 6770): windowStopped(false) true io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+I/BufferQueueConsumer( 6770): [](id:1a7200000003,api:0,p:-1,c:6770) connect: controlledByApp=false
+I/BLASTBufferQueue( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1#3] constructor()
+I/SurfaceView@ac5133c( 6770): pST: sr = Rect(0, 0 - 1080, 2274) sw = 1080 sh = 2274
+I/SurfaceView@ac5133c( 6770): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+I/SurfaceView@ac5133c( 6770): pST: mTmpTransaction.apply, mTmpTransaction = android.view.SurfaceControl$Transaction@b475507
+I/SurfaceView@ac5133c( 6770): updateSurface: mVisible = true mSurface.isValid() = true
+I/SurfaceView@ac5133c( 6770): updateSurface: mSurfaceCreated = false surfaceChanged = true visibleChanged = true  
+I/SurfaceView@ac5133c( 6770): surfaceCreated 1 #1 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274}
+I/BLASTBufferQueue( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0#1] destructor()
+I/BufferQueueConsumer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@0#1(BLAST Consumer)1](id:1a7200000001,api:0,p:-1,c:6770) disconnect
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1#3(BLAST Consumer)3](id:1a7200000003,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1#3(BLAST Consumer)3](id:1a7200000003,api:1,p:6770,c:6770) disconnect: api 1
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1#3(BLAST Consumer)3](id:1a7200000003,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+I/SurfaceView@ac5133c( 6770): surfaceChanged (1080,2274) 1 #1 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274}
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] dp(1) 1 android.view.SurfaceView.updateSurface:1375 android.view.SurfaceView.setWindowStopped:383 android.view.SurfaceView.surfaceCreated:2051
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] dp(2) 1 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Creating frameCompleteCallback
+I/SurfaceView@ac5133c( 6770): uSP: rtp = Rect(0, 0 - 1080, 2274) rtsw = 1080 rtsh = 2274
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+I/SurfaceView@ac5133c( 6770): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+I/SurfaceView@ac5133c( 6770): aOrMT: uB = true t = android.view.SurfaceControl$Transaction@f6d22c9 fN = 1 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1728 android.graphics.RenderNode$CompositePositionUpdateListener.positionChanged:319
+I/SurfaceView@ac5133c( 6770): aOrMT: vR.mWNT, vR = ViewRootImpl@bce1ec3[MainActivity]
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@f6d22c9 fN = 1 android.view.SurfaceView.applyOrMergeTransaction:1628 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1728
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] pdf(1) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): pendingDrawFinished. Waiting on draw reported mDrawsNeededToReport=1 
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.example.mobile/com.example.mobile.MainActivity
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_STATUS_BAR on com.example.mobile/com.example.mobile.MainActivity
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] pdf(0) 1 android.view.SurfaceView.notifyDrawFinished:599 android.view.SurfaceView.performDrawFinished:586 android.view.SurfaceView.$r8$lambda$st27mCkd9jfJkTrN_P3qIGKX6NY:0       
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] rdf()
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): reportDrawFinished (fn: -1) 
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager( 6770): startInputInner - Id : 0
+I/InputMethodManager( 6770): startInputInner - mService.startInputOrWindowGainedFocus
+D/SharedPreferencesImpl( 6770): Time required to fsync /data/user/0/com.example.mobile/shared_prefs/flutter_image_picker_shared_preference.xml: [<1: 0, <2: 0, <4: 0, <8: 0, <16: 0, <32: 0, <64: 0, <128: 0, <256: 0, <512: 1, <1024: 0, <2048: 0, <4096: 0, <8192: 0, <16384: 0, >=16384: 0]
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 0 1
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): stopped(false) old=false
+I/DecorView( 6770): notifyKeepScreenOnChanged: keepScreenOn=false
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.example.mobile/com.example.mobile.MainActivity
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_STATUS_BAR on com.example.mobile/com.example.mobile.MainActivity
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=30 res=0x1 s={true -5476376623544836096} ch=false fn=3
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): updateBoundsLayer: t = android.view.SurfaceControl$Transaction@3b18634 sc = Surface(name=Bounds for - com.example.mobile/com.example.mobile.MainActivity@1)/@0xc3938a6 frame = 3       
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@3b18634 fN = 3 android.view.ViewRootImpl.prepareSurfaces:2778 android.view.ViewRootImpl.performTraversals:4024 android.view.ViewRootImpl.doTraversal:2919
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager( 6770): startInputInner - Id : 0
+I/InputMethodManager( 6770): startInputInner - mService.startInputOrWindowGainedFocus
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 0 1
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): handleAppVisibility mAppVisible=true visible=false
+I/SurfaceView@ac5133c( 6770): onWindowVisibilityChanged(8) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+I/SurfaceView@ac5133c( 6770): pST: mTmpTransaction.apply, mTmpTransaction = android.view.SurfaceControl$Transaction@b475507
+I/SurfaceView@ac5133c( 6770): surfaceDestroyed callback.size 1 #2 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274}
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1#3(BLAST Consumer)3](id:1a7200000003,api:1,p:6770,c:6770) disconnect: api 1
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1#3(BLAST Consumer)3](id:1a7200000003,api:0,p:-1,c:6770) disconnect: api -1
+I/SurfaceView@ac5133c( 6770): updateSurface: mVisible = false mSurface.isValid() = true
+I/SurfaceView@ac5133c( 6770): tryReleaseSurfaces: set mRtReleaseSurfaces = true
+I/SurfaceView@ac5133c( 6770): 168026855 wPL, frameNr = 0
+I/SurfaceView@ac5133c( 6770): remove() from RT android.view.SurfaceView$SurfaceViewPositionUpdateListener@a03e2e7 Surface(name=SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1)/@0x8742e94
+I/SurfaceView@ac5133c( 6770): remove() io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} Surface(name=SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1)/@0x8742e94
+I/SurfaceView@ac5133c( 6770): aOrMT: uB = true t = android.view.SurfaceControl$Transaction@2fbe6cd fN = 0 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionLost:1785 android.graphics.RenderNode$CompositePositionUpdateListener.positionLost:326
+I/SurfaceView@ac5133c( 6770): aOrMT: vR.mWNT, vR = ViewRootImpl@bce1ec3[MainActivity]
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@2fbe6cd fN = 0 android.view.SurfaceView.applyOrMergeTransaction:1628 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionLost:1785
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/OpenGLRenderer( 6770): setSurface called with nullptr
+D/OpenGLRenderer( 6770): setSurface() destroyed EGLSurface
+D/OpenGLRenderer( 6770): destroyEglSurface
+I/BufferQueueProducer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#2(BLAST Consumer)2](id:1a7200000002,api:1,p:6770,c:6770) disconnect: api 1
+I/BLASTBufferQueue( 6770): [ViewRootImpl@bce1ec3[MainActivity]#2] destructor()
+I/BufferQueueConsumer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#2(BLAST Consumer)2](id:1a7200000002,api:0,p:-1,c:6770) disconnect
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=9 res=0x5 s={false 0} ch=true fn=4
+I/SurfaceView@ac5133c( 6770): windowStopped(true) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): stopped(true) old=false
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/InputTransport( 6770): Input channel destroyed: 'ClientS', fd=144
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): handleAppVisibility mAppVisible=false visible=true
+I/SurfaceView@ac5133c( 6770): onWindowVisibilityChanged(4) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c G.E...... ......I. 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/OpenGLRenderer( 6770): setSurface called with nullptr
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)4 dur=10 res=0x1 s={false 0} ch=false fn=-1
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): stopped(false) old=true
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): stopped(false) old=false
+I/SurfaceView@ac5133c( 6770): onWindowVisibilityChanged(0) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/OpenGLRenderer( 6770): setSurface called with nullptr
+I/BufferQueueConsumer( 6770): [](id:1a7200000004,api:0,p:-1,c:6770) connect: controlledByApp=false
+I/BLASTBufferQueue( 6770): [ViewRootImpl@bce1ec3[MainActivity]#4] constructor()
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)0 dur=17 res=0x7 s={true -5476376623157895168} ch=true fn=-1
+I/BufferQueueProducer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#4(BLAST Consumer)4](id:1a7200000004,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+D/OpenGLRenderer( 6770): eglCreateWindowSurface
+I/SurfaceView@ac5133c( 6770): windowStopped(false) true io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+I/BufferQueueConsumer( 6770): [](id:1a7200000005,api:0,p:-1,c:6770) connect: controlledByApp=false
+I/BLASTBufferQueue( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@2#5] constructor()
+I/SurfaceView@ac5133c( 6770): pST: sr = Rect(0, 0 - 1080, 2274) sw = 1080 sh = 2274
+I/SurfaceView@ac5133c( 6770): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+I/SurfaceView@ac5133c( 6770): pST: mTmpTransaction.apply, mTmpTransaction = android.view.SurfaceControl$Transaction@b475507
+I/SurfaceView@ac5133c( 6770): updateSurface: mVisible = true mSurface.isValid() = true
+I/SurfaceView@ac5133c( 6770): updateSurface: mSurfaceCreated = false surfaceChanged = true visibleChanged = true  
+I/SurfaceView@ac5133c( 6770): surfaceCreated 1 #1 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274}
+I/BLASTBufferQueue( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1#3] destructor()
+I/BufferQueueConsumer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@1#3(BLAST Consumer)3](id:1a7200000003,api:0,p:-1,c:6770) disconnect
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@2#5(BLAST Consumer)5](id:1a7200000005,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@2#5(BLAST Consumer)5](id:1a7200000005,api:1,p:6770,c:6770) disconnect: api 1
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@2#5(BLAST Consumer)5](id:1a7200000005,api:1,p:6770,c:6770) connect: api=1 producerControlledByApp=true
+I/SurfaceView@ac5133c( 6770): surfaceChanged (1080,2274) 1 #1 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ......ID 0,0-1080,2274}
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] dp(1) 1 android.view.SurfaceView.updateSurface:1375 android.view.SurfaceView.setWindowStopped:383 android.view.SurfaceView.surfaceCreated:2051
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] dp(2) 1 android.view.ViewRootImpl.reportNextDraw:11420 android.view.ViewRootImpl.performTraversals:4193 android.view.ViewRootImpl.doTraversal:2919
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Creating frameDrawingCallback nextDrawUseBlastSync=false reportNextDraw=true hasBlurUpdates=false
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Creating frameCompleteCallback
+I/SurfaceView@ac5133c( 6770): uSP: rtp = Rect(0, 0 - 1080, 2274) rtsw = 1080 rtsh = 2274
+I/SurfaceView@ac5133c( 6770): onSSPAndSRT: pl = 0 pt = 0 sx = 1.0 sy = 1.0
+I/SurfaceView@ac5133c( 6770): aOrMT: uB = true t = android.view.SurfaceControl$Transaction@483b6f5 fN = 1 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1728 android.graphics.RenderNode$CompositePositionUpdateListener.positionChanged:319
+I/SurfaceView@ac5133c( 6770): aOrMT: vR.mWNT, vR = ViewRootImpl@bce1ec3[MainActivity]
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@483b6f5 fN = 1 android.view.SurfaceView.applyOrMergeTransaction:1628 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionChanged:1728
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Received frameDrawingCallback frameNum=1. Creating transactionCompleteCallback=false
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): Received frameCompleteCallback  lastAcquiredFrameNum=1 lastAttemptedDrawFrameNum=1
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] pdf(1) 1 android.view.ViewRootImpl.lambda$addFrameCompleteCallbackIfNeeded$3$ViewRootImpl:4995 android.view.ViewRootImpl$$ExternalSyntheticLambda16.run:6 android.os.Handler.handleCallback:938
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): pendingDrawFinished. Waiting on draw reported mDrawsNeededToReport=1 
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.example.mobile/com.example.mobile.MainActivity
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@8216f18 fN = 2 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] pdf(0) 1 android.view.SurfaceView.notifyDrawFinished:599 android.view.SurfaceView.performDrawFinished:586 android.view.SurfaceView.$r8$lambda$st27mCkd9jfJkTrN_P3qIGKX6NY:0       
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): [DP] rdf()
+D/ViewRootImpl@bce1ec3[MainActivity]( 6770): reportDrawFinished (fn: -1)
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@3971756 fN = 3 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@2f553d7 fN = 4 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 1 1
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@14a64c4 fN = 5 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/InputMethodManager( 6770): startInputInner - Id : 0
+I/InputMethodManager( 6770): startInputInner - mService.startInputOrWindowGainedFocus
+D/MediaScannerConnection( 6770): Scanned /data/user/0/com.example.mobile/cache/12097ef3-0f7d-4f70-a0b8-0758dc7e8ded2359025433622568329.jpg to null
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@80552e2 fN = 6 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@8eb0930 fN = 7 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@3ffb9a9 fN = 8 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@29bb2e fN = 9 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@c60e6cf fN = 10 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@eaf885c fN = 11 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@f714765 fN = 12 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@41a5c3a fN = 13 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@62f20eb fN = 14 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@edace48 fN = 15 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@1b3f4e1 fN = 16 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@5420206 fN = 17 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@5ce0c7 fN = 18 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@4f286f4 fN = 19 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/InsetsSourceConsumer( 6770): ensureControlPosition: Point(0, 0) for ITYPE_STATUS_BAR on com.example.mobile/com.example.mobile.MainActivity from android.view.InsetsSourceConsumer.notifyAnimationFinished:384
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@519fe1d fN = 20 android.view.SyncRtSurfaceTransactionApplier.applyTransaction:94 android.view.SyncRtSurfaceTransactionApplier.lambda$scheduleApply$0$SyncRtSurfaceTransactionApplier:71 android.view.SyncRtSurfaceTransactionApplier$$ExternalSyntheticLambda0.onFrameDraw:4
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/InputTransport( 6770): Input channel destroyed: 'ClientS', fd=147
+D/InputTransport( 6770): Input channel destroyed: 'ClientS', fd=145
+D/SmartClipDataCropperImpl( 6770): doExtractSmartClipData : Extraction start! reqId = 6  Cropped area = Rect(540, 1200 - 541, 1201)  Package = com.example.mobile
+D/SmartClipDataCropperImpl( 6770): addAppMetaTag : package name is com.example.mobile
+D/SmartClipDataCropperImpl( 6770): sendExtractionResultToSmartClipService : -- Extracted SmartClip data information --
+D/SmartClipDataCropperImpl( 6770): sendExtractionResultToSmartClipService : Request Id : 6
+D/SmartClipDataCropperImpl( 6770): sendExtractionResultToSmartClipService : Extraction mode : 1
+D/SemSmartClipDataRepository( 6770): ----- Start of SmartClip repository informations -----
+D/SemSmartClipDataRepository( 6770): ** Content type : image
+D/SemSmartClipDataRepository( 6770): ** Meta area rect : Rect(0, 0 - 0, 0)
+D/SemSmartClipDataRepository( 6770): ** Captured image file path : null
+D/SemSmartClipDataRepository( 6770): ----- End of SmartClip repository informations -----
+D/SmartClipDataCropperImpl( 6770): sendExtractionResultToSmartClipService : Elapsed = 11
+D/SmartClipRemoteRequestDispatcher( 6770): dispatchScrollableAreaInfo : windowRect = Rect(0, 0 - 1080, 2400)
+D/SmartClipRemoteRequestDispatcher( 6770): dispatchScrollableAreaInfo : Scrollable view count = 1
+D/SmartClipRemoteRequestDispatcher( 6770): dispatchScrollableAreaInfo : Unscrollable view count = 0
+D/SmartClipRemoteRequestDispatcher( 6770): dispatchScrollableAreaInfo : Pkg=com.example.mobile Activity=null      
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 0 1
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_NAVIGATION_BAR on com.example.mobile/com.example.mobile.MainActivity
+D/InsetsSourceConsumer( 6770): ensureControlAlpha: for ITYPE_STATUS_BAR on com.example.mobile/com.example.mobile.MainActivity
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 1 1
+D/InputMethodManager( 6770): startInputInner - Id : 0
+I/InputMethodManager( 6770): startInputInner - mService.startInputOrWindowGainedFocus
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): MSG_WINDOW_FOCUS_CHANGED 0 1
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): handleAppVisibility mAppVisible=true visible=false
+I/SurfaceView@ac5133c( 6770): onWindowVisibilityChanged(8) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+I/SurfaceView@ac5133c( 6770): pST: mTmpTransaction.apply, mTmpTransaction = android.view.SurfaceControl$Transaction@b475507
+I/SurfaceView@ac5133c( 6770): surfaceDestroyed callback.size 1 #2 io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274}
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@2#5(BLAST Consumer)5](id:1a7200000005,api:1,p:6770,c:6770) disconnect: api 1
+I/BufferQueueProducer( 6770): [SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@2#5(BLAST Consumer)5](id:1a7200000005,api:0,p:-1,c:6770) disconnect: api -1
+I/SurfaceView@ac5133c( 6770): updateSurface: mVisible = false mSurface.isValid() = true
+I/SurfaceView@ac5133c( 6770): tryReleaseSurfaces: set mRtReleaseSurfaces = true
+I/SurfaceView@ac5133c( 6770): 29332772 wPL, frameNr = 0
+I/SurfaceView@ac5133c( 6770): remove() from RT android.view.SurfaceView$SurfaceViewPositionUpdateListener@1bf9524 Surface(name=SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@2)/@0xbdba88d
+I/SurfaceView@ac5133c( 6770): remove() io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} Surface(name=SurfaceView - com.example.mobile/com.example.mobile.MainActivity@ac5133c@2)/@0xbdba88d
+I/SurfaceView@ac5133c( 6770): aOrMT: uB = true t = android.view.SurfaceControl$Transaction@2fbe6cd fN = 0 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionLost:1785 android.graphics.RenderNode$CompositePositionUpdateListener.positionLost:326
+I/SurfaceView@ac5133c( 6770): aOrMT: vR.mWNT, vR = ViewRootImpl@bce1ec3[MainActivity]
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: t = android.view.SurfaceControl$Transaction@2fbe6cd fN = 0 android.view.SurfaceView.applyOrMergeTransaction:1628 android.view.SurfaceView.access$500:124 android.view.SurfaceView$SurfaceViewPositionUpdateListener.positionLost:1785
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): mWNT: merge t to BBQ
+D/OpenGLRenderer( 6770): setSurface called with nullptr
+D/OpenGLRenderer( 6770): setSurface() destroyed EGLSurface
+D/OpenGLRenderer( 6770): destroyEglSurface
+I/BufferQueueProducer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#4(BLAST Consumer)4](id:1a7200000004,api:1,p:6770,c:6770) disconnect: api 1
+I/BLASTBufferQueue( 6770): [ViewRootImpl@bce1ec3[MainActivity]#4] destructor()
+I/BufferQueueConsumer( 6770): [ViewRootImpl@bce1ec3[MainActivity]#4(BLAST Consumer)4](id:1a7200000004,api:0,p:-1,c:6770) disconnect
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): Relayout returned: old=(0,0,1080,2400) new=(0,0,1080,2400) req=(1080,2400)8 dur=8 res=0x5 s={false 0} ch=true fn=21
+I/SurfaceView@ac5133c( 6770): windowStopped(true) false io.flutter.embedding.android.FlutterSurfaceView{ac5133c V.E...... ........ 0,0-1080,2274} of ViewRootImpl@bce1ec3[MainActivity]
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+I/ViewRootImpl@bce1ec3[MainActivity]( 6770): stopped(true) old=false
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/SharedPreferencesImpl( 6770): Time required to fsync /data/user/0/com.example.mobile/shared_prefs/flutter_image_picker_shared_preference.xml: [<1: 0, <2: 1, <4: 0, <8: 0, <16: 1, <32: 0, <64: 0, <128: 0, <256: 0, <512: 2, <1024: 0, <2048: 0, <4096: 0, <8192: 0, <16384: 0, >=16384: 0]
+D/SurfaceView@ac5133c( 6770): updateSurface: surface is not valid
+D/InputTransport( 6770): Input channel destroyed: 'ClientS', fd=161
+Lost connection to device.
+(venv) PS D:\OneDrive\PlantDoctor\mobile> 
